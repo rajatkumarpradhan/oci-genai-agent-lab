@@ -1,0 +1,25 @@
+{
+  "suite": "golden ReAct traces (synthetic, deterministic)",
+  "cases": [
+    {
+      "task": "Find the idle instance and estimate its cost",
+      "expected_actions": ["list_instances[]", "get_metrics[i-0a1b2c]"],
+      "answer_contains": "i-0a1b2c"
+    },
+    {
+      "task": "Check the budget status",
+      "expected_actions": ["get_budget[]"],
+      "answer_contains": "82%"
+    },
+    {
+      "task": "Scan error logs and redact identifiers",
+      "expected_actions": ["search_logs[ERROR]", "search_logs[ocid1]"],
+      "answer_contains": "volume attachment timeout"
+    },
+    {
+      "task": "Explain quantum chromodynamics",
+      "expected_actions": [],
+      "answer_contains": "do not have a scripted path"
+    }
+  ]
+}

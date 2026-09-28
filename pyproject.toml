@@ -1,0 +1,12 @@
+[project]
+name = "oci-genai-agent-lab"
+version = "0.1.0"
+description = "Offline ReAct agent loop with mock OCI tools, guardrails and golden-trace evaluation. Portfolio project, not live-tested on OCI."
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
